@@ -1,0 +1,20 @@
+.header{
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),url(banner.jpeg);
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.header--text{
+  color: aliceblue;  
+  margin: auto;
+  text-align: center;
+  margin-top: 30vh;
+  width: 100%;
+}
