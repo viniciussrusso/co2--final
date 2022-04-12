@@ -1,9 +1,9 @@
 import { useState } from "react";
+import InputBar from "./InputBar";
 
 export function Another(props) {
   const [eletricity, setEletricity] = useState();
-  console.log(props.userInput);
-  console.log("eletricidade" + eletricity);
+  //console.log("eletricidade" + eletricity);
 
   //Eletricity
 
@@ -36,6 +36,12 @@ export function Another(props) {
     setEletricity(res2);
   }
   api1();
+
+  return (
+    <>
+      <button onClick={() => props.changeRes(eletricity)}>clidk </button>
+    </>
+  );
 }
 
 export default Another;

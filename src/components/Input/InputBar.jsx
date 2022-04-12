@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Another from "./Another";
-import Another2 from "./Another2";
-import { Card } from "react-bootstrap";
 
-const InputBar = (props) => {
+const InputBar = () => {
   const [userInput, setUserInput] = useState("");
+  const [resu, setResu] = useState(0);
+
+  console.log(userInput);
+  console.log();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -13,7 +15,7 @@ const InputBar = (props) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label>Enter a number:</label>
+        <label>Enter a number {resu}</label>
         <input
           type="text"
           value={userInput}
@@ -21,8 +23,8 @@ const InputBar = (props) => {
         />
         <button type="submit">Send</button>
 
-        <Another userInput={userInput} />
-        <Another2 userInput={userInput} />
+        <Another userInput={userInput} changeRes={(resu) => setResu(resu)} />
+        <h1>{resu}</h1>
       </form>
     </>
   );
