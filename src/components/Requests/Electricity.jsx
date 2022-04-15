@@ -1,14 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-export function Another(props) {
+export function Electricity(props) {
   const [eletricity, setEletricity] = useState();
 
   //Eletricity
 
   const requestOptions = {
     headers: {
-      // Authorization: process.env.REACT_APP_API_KEY,
-      Authorization: "Bearer VT2MVX6BQRMQMBNBRF9CF61KFWXG",
+      Authorization: process.env.REACT_APP_API_KEY,
     },
     method: "post",
     responseType: "json",
@@ -42,4 +41,4 @@ export function Another(props) {
   );
 }
 
-export default Another;
+export default Electricity;

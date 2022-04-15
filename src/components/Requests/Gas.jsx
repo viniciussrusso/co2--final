@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export function Another(props) {
   const [gas, setGas] = useState();
@@ -7,8 +7,7 @@ export function Another(props) {
 
   const requestOption2 = {
     headers: {
-      // Authorization: process.env.REACT_APP_API_KEY,
-      Authorization: "Bearer VT2MVX6BQRMQMBNBRF9CF61KFWXG",
+      Authorization: process.env.REACT_APP_API_KEY,
     },
     method: "post",
     responseType: "json",

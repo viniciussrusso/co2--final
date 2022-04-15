@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Another from "../Requests/Electricity";
+import Electricity from "../Requests/Electricity";
 import Gas from "../Requests/Gas";
 
 const InputBar = ({ inputId }) => {
@@ -15,7 +15,7 @@ const InputBar = ({ inputId }) => {
     switch (inputId) {
       case "1":
         return (
-          <Another userInput={userInput} change={(resu) => setResu(resu)} />
+          <Electricity userInput={userInput} change={(resu) => setResu(resu)} />
         );
 
       case "2":
