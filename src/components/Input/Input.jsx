@@ -265,7 +265,7 @@ function Input(props) {
     api6();
     api7();
     api8();
-  }, [props.userInput]);
+  }, []);
 
   return (
     // <form onSubmit={handleSubmit}>

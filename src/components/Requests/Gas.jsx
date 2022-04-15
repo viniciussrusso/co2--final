@@ -1,13 +1,11 @@
-import { useState } from "react";
-import InputBar from "./InputBar";
+import { useState, useEffect } from "react";
 
 export function Another(props) {
-  const [eletricity, setEletricity] = useState();
-  //console.log("eletricidade" + eletricity);
+  const [gas, setGas] = useState();
 
-  //Eletricity
+  //Gas
 
-  const requestOptions = {
+  const requestOption2 = {
     headers: {
       // Authorization: process.env.REACT_APP_API_KEY,
       Authorization: "Bearer VT2MVX6BQRMQMBNBRF9CF61KFWXG",
@@ -15,31 +13,30 @@ export function Another(props) {
     method: "post",
     responseType: "json",
     body: JSON.stringify({
-      emission_factor: "electricity-energy_source_grid_mix",
+      emission_factor: "fuel_type_gas_oil-fuel_use_na",
       parameters: {
-        energy: parseInt(props.userInput),
-        energy_unit: "kWh",
+        volume: parseInt(props.userInput),
+        volume_unit: "m3",
       },
     }),
   };
 
-  async function api1() {
+  async function api2() {
     let response = await fetch(
       "https://beta2.api.climatiq.io/estimate",
-      requestOptions
+      requestOption2
     );
     response = await response.json();
 
     const res = JSON.stringify(response.co2e);
-    console.log(res);
     const res2 = parseFloat(res);
-    setEletricity(res2);
+    setGas(res2);
   }
-  api1();
+  api2();
 
   return (
     <>
-      <button onClick={() => props.changeRes(eletricity)}>clidk </button>
+      <button onClick={() => props.change(gas)}>Send 2 </button>
     </>
   );
 }
