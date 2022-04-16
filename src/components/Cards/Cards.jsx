@@ -8,15 +8,20 @@ const Cards = ({ cardTitle, text, cardId }) => {
     switch (cardId) {
       case "1":
         return <InputBar inputId={"1"}></InputBar>;
-
       case "2":
         return <InputBar inputId={"2"}></InputBar>;
       case "3":
-        return (
-          <>
-            <h1>{"anot"}</h1>
-          </>
-        );
+        return <InputBar inputId={"3"}></InputBar>;
+      case "4":
+        return <InputBar inputId={"4"}></InputBar>;
+      case "5":
+        return <InputBar inputId={"5"}></InputBar>;
+      case "6":
+        return <InputBar inputId={"6"}></InputBar>;
+      case "7":
+        return <InputBar inputId={"7"}></InputBar>;
+      case "8":
+        return <InputBar inputId={"8"}></InputBar>;
       default:
         return <></>;
     }

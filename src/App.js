@@ -23,24 +23,48 @@ function App(props) {
           />
         </Col>
         <Col>
-          <Cards />
+          <Cards
+            cardTitle={"Petrol Car"}
+            text={"Please enter your monthly KM"}
+            cardId={"3"}
+          />
         </Col>
         <Col>
-          <Cards />
+          <Cards
+            cardTitle={"Petrol Motorcycle"}
+            text={"Please enter your monthly KM"}
+            cardId={"4"}
+          />
         </Col>
       </Row>
       <Row>
         <Col>
-          <Cards />
+          <Cards
+            cardTitle={"Train"}
+            text={"Please enter your monthly train usage in KM"}
+            cardId={"5"}
+          />
         </Col>
         <Col>
-          <Cards />
+          <Cards
+            cardTitle={"Subway"}
+            text={"Please enter your monthly gas in M3"}
+            cardId={"6"}
+          />
         </Col>
         <Col>
-          <Cards />
+          <Cards
+            cardTitle={"Bus"}
+            text={"Please enter your monthly KM"}
+            cardId={"7"}
+          />
         </Col>
         <Col>
-          <Cards />
+          <Cards
+            cardTitle={"Ferry"}
+            text={"Please enter your monthly KM"}
+            cardId={"8"}
+          />
         </Col>
       </Row>
     </Container>

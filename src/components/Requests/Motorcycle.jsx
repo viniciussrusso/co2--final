@@ -1,10 +1,9 @@
 import { useState } from "react";
 
-export function Another(props) {
-  const [gas, setGas] = useState();
+export function Motorcycle(props) {
+  const [motorcycle, setMotorcycle] = useState();
 
-  //Gas
-
+  //MOTORCYCLE
   const requestOption = {
     headers: {
       Authorization: process.env.REACT_APP_API_KEY,
@@ -12,15 +11,16 @@ export function Another(props) {
     method: "post",
     responseType: "json",
     body: JSON.stringify({
-      emission_factor: "fuel_type_gas_oil-fuel_use_na",
+      emission_factor:
+        "passenger_vehicle-vehicle_type_motorcycle-fuel_source_na-engine_size_na-vehicle_age_na-vehicle_weight_na",
       parameters: {
-        volume: parseInt(props.userInput),
-        volume_unit: "m3",
+        distance: parseInt(props.userInput),
+        distance_unit: "km",
       },
     }),
   };
 
-  async function api2() {
+  async function api() {
     let response = await fetch(
       "https://beta2.api.climatiq.io/estimate",
       requestOption
@@ -29,15 +29,16 @@ export function Another(props) {
 
     const res = JSON.stringify(response.co2e);
     const res2 = parseFloat(res);
-    setGas(res2);
+    setMotorcycle(res2);
   }
-  api2();
+
+  api();
 
   return (
     <>
-      <button onClick={() => props.change(gas)}>Send 2 </button>
+      <button onClick={() => props.change(motorcycle)}>Send 4</button>
     </>
   );
 }
 
-export default Another;
+export default Motorcycle;
