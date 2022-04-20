@@ -36,7 +36,7 @@ export function Motorcycle(props) {
 
   return (
     <>
-      <button onClick={() => props.change(motorcycle)}>Send 4</button>
+      <button onClick={() => props.change(motorcycle)}>Send </button>
     </>
   );
 }

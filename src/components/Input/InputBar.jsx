@@ -3,10 +3,11 @@ import Electricity from "../Requests/Electricity";
 import Gas from "../Requests/Gas";
 import CarPetrol from "../Requests/CarPetrol";
 import Motorcycle from "../Requests/Motorcycle";
-import { Train } from "../Requests/Train";
-import { Bus } from "../Requests/Bus";
-import { Subway } from "../Requests/Subway";
-import { Ferry } from "../Requests/Ferry";
+import Train from "../Requests/Train";
+import Bus from "../Requests/Bus";
+import Subway from "../Requests/Subway";
+import Ferry from "../Requests/Ferry";
+import Results from "../Results/Results";
 
 const InputBar = ({ inputId }) => {
   const [userInput, setUserInput] = useState("");
@@ -86,6 +87,30 @@ const InputBar = ({ inputId }) => {
     }
   };
 
+  const selectionTwo = () => {
+    switch (inputId) {
+      case "1":
+        return <p>Total CO2/kg: {eletricityRes}</p>;
+      case "2":
+        return <p>Total CO2/kg: {gasRes}</p>;
+      case "3":
+        return <p>Total CO2/kg: {carRes}</p>;
+      case "4":
+        return <p>Total CO2/kg: {motorcycleRes}</p>;
+      case "5":
+        return <p>Total CO2/kg: {trainRes}</p>;
+      case "6":
+        return <p>Total CO2/kg: {subwayRes}</p>;
+      case "7":
+        return <p>Total CO2/kg: {busRes}</p>;
+      case "8":
+        return <p>Total CO2/kg: {ferryRes}</p>;
+
+      default:
+        return <></>;
+    }
+  };
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -95,21 +120,7 @@ const InputBar = ({ inputId }) => {
           onChange={(e) => setUserInput(e.target.value)}
         />
         {selection()}
-        {eletricityRes +
-          " " +
-          gasRes +
-          " " +
-          carRes +
-          " " +
-          motorcycleRes +
-          " " +
-          trainRes +
-          " " +
-          subwayRes +
-          " " +
-          busRes +
-          " " +
-          ferryRes}
+        {selectionTwo()}
       </form>
     </>
   );

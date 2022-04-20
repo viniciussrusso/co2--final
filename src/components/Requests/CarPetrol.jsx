@@ -36,7 +36,7 @@ export function CarPetrol(props) {
 
   return (
     <>
-      <button onClick={() => props.change(car)}>Send 3</button>
+      <button onClick={() => props.change(car)}>Send </button>
     </>
   );
 }

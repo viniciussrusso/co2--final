@@ -35,7 +35,7 @@ export function Another(props) {
 
   return (
     <>
-      <button onClick={() => props.change(gas)}>Send 2 </button>
+      <button onClick={() => props.change(gas)}>Send </button>
     </>
   );
 }

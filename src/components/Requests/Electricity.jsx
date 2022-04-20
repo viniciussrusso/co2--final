@@ -36,7 +36,7 @@ export function Electricity(props) {
 
   return (
     <>
-      <button onClick={() => props.change(eletricity)}>clidk </button>
+      <button onClick={() => props.change(eletricity)}>Send </button>
     </>
   );
 }

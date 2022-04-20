@@ -35,7 +35,7 @@ export function Bus(props) {
 
   return (
     <>
-      <button onClick={() => props.change(bus)}>Send 7</button>
+      <button onClick={() => props.change(bus)}>Send </button>
     </>
   );
 }

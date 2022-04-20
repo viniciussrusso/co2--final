@@ -35,7 +35,7 @@ export function Subway(props) {
 
   return (
     <>
-      <button onClick={() => props.change(subway)}>Send 6</button>
+      <button onClick={() => props.change(subway)}>Send </button>
     </>
   );
 }

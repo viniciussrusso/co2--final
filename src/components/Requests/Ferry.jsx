@@ -35,7 +35,7 @@ export function Ferry(props) {
 
   return (
     <>
-      <button onClick={() => props.change(ferry)}>Send 8</button>
+      <button onClick={() => props.change(ferry)}>Send </button>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Cards from "./components/Cards/Cards";
 import Header from "./components/Header/Header";
+import Results from "./components/Results/Results";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -66,6 +67,7 @@ function App(props) {
             cardId={"8"}
           />
         </Col>
+        <Results></Results>
       </Row>
     </Container>
   );

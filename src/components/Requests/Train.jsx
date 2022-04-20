@@ -36,7 +36,7 @@ export function Train(props) {
 
   return (
     <>
-      <button onClick={() => props.change(train)}>Send 5</button>
+      <button onClick={() => props.change(train)}>Send </button>
     </>
   );
 }
