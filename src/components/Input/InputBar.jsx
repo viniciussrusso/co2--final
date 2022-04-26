@@ -7,18 +7,18 @@ import Train from "../Requests/Train";
 import Bus from "../Requests/Bus";
 import Subway from "../Requests/Subway";
 import Ferry from "../Requests/Ferry";
-import Results from "../Results/Results";
 
 const InputBar = ({ inputId }) => {
   const [userInput, setUserInput] = useState("");
-  const [eletricityRes, setElectricityRes] = useState(0);
-  const [gasRes, setGasRes] = useState(0);
-  const [carRes, setCardRes] = useState(0);
-  const [motorcycleRes, setMotorcycleRes] = useState(0);
-  const [trainRes, setTrainRes] = useState(0);
-  const [subwayRes, setSubwayRes] = useState(0);
+  const [eletricityRes, setElectricityRes] = useState();
+  const [gasRes, setGasRes] = useState();
+  const [carRes, setCardRes] = useState();
+  const [motorcycleRes, setMotorcycleRes] = useState();
+  const [trainRes, setTrainRes] = useState();
+  const [subwayRes, setSubwayRes] = useState();
   const [busRes, setBusRes] = useState(0);
-  const [ferryRes, setFerryRes] = useState(0);
+  const [ferryRes, setFerryRes] = useState();
+  const [total, setTotal] = useState();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -75,13 +75,13 @@ const InputBar = ({ inputId }) => {
 
       case "8":
         return (
-          <>
-            <Ferry
-              userInput={userInput}
-              change={(ferryRes) => setFerryRes(ferryRes)}
-            />
-          </>
+          <Ferry
+            userInput={userInput}
+            change={(ferryRes) => setFerryRes(ferryRes)}
+          />
         );
+      case "9":
+        return <></>;
       default:
         return <></>;
     }
@@ -111,17 +111,38 @@ const InputBar = ({ inputId }) => {
     }
   };
 
+  const a = () => {
+    if (
+      inputId === "1" ||
+      inputId === "2" ||
+      inputId === "3" ||
+      inputId === "4" ||
+      inputId === "5" ||
+      inputId === "6" ||
+      inputId === "7" ||
+      inputId === "8"
+    ) {
+      return (
+        <>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+            />
+          </form>
+        </>
+      );
+    } else {
+      return <></>;
+    }
+  };
+
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={userInput}
-          onChange={(e) => setUserInput(e.target.value)}
-        />
-        {selection()}
-        {selectionTwo()}
-      </form>
+      {a()}
+      {selection()}
+      {selectionTwo()}
     </>
   );
 };

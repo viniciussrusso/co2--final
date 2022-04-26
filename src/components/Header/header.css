@@ -7,7 +7,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    width: 100%;
     display: flex;
 }
 
@@ -16,5 +15,5 @@
   margin: auto;
   text-align: center;
   margin-top: 30vh;
-  width: 100%;
+
 }

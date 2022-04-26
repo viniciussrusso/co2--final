@@ -22,6 +22,8 @@ const Cards = ({ cardTitle, text, cardId }) => {
         return <InputBar inputId={"7"}></InputBar>;
       case "8":
         return <InputBar inputId={"8"}></InputBar>;
+      case "9":
+        return <InputBar inputId={"9"}></InputBar>;
       default:
         return <></>;
     }

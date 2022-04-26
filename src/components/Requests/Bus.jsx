@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function Bus(props) {
-  const [bus, setBus] = useState();
+  const [bus, setBus] = useState(0);
 
   //BUS
   const requestOption = {
@@ -33,11 +33,11 @@ export function Bus(props) {
   }
   api();
 
-  return (
-    <>
-      <button onClick={() => props.change(bus)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(bus);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default Bus;
