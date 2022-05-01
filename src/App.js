@@ -49,7 +49,7 @@ function App(props) {
         <Col>
           <Cards
             cardTitle={"Subway"}
-            text={"Please enter your monthly gas in M3"}
+            text={"Please enter your monthly KM"}
             cardId={"6"}
           />
         </Col>
