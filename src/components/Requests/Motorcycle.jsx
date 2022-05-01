@@ -34,11 +34,11 @@ export function Motorcycle(props) {
 
   api();
 
-  return (
-    <>
-      <button onClick={() => props.change(motorcycle)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(motorcycle);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default Motorcycle;

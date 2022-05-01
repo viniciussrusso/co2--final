@@ -16,7 +16,7 @@ const InputBar = ({ inputId }) => {
   const [motorcycleRes, setMotorcycleRes] = useState();
   const [trainRes, setTrainRes] = useState();
   const [subwayRes, setSubwayRes] = useState();
-  const [busRes, setBusRes] = useState(0);
+  const [busRes, setBusRes] = useState("");
   const [ferryRes, setFerryRes] = useState();
   const [total, setTotal] = useState();
 
@@ -90,21 +90,53 @@ const InputBar = ({ inputId }) => {
   const selectionTwo = () => {
     switch (inputId) {
       case "1":
-        return <p>Total CO2/kg: {eletricityRes}</p>;
+        if (isNaN(eletricityRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {eletricityRes}</p>;
+        }
       case "2":
-        return <p>Total CO2/kg: {gasRes}</p>;
+        if (isNaN(gasRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {gasRes}</p>;
+        }
       case "3":
-        return <p>Total CO2/kg: {carRes}</p>;
+        if (isNaN(carRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {carRes}</p>;
+        }
       case "4":
-        return <p>Total CO2/kg: {motorcycleRes}</p>;
+        if (isNaN(motorcycleRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {motorcycleRes}</p>;
+        }
       case "5":
-        return <p>Total CO2/kg: {trainRes}</p>;
+        if (isNaN(trainRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {trainRes}</p>;
+        }
       case "6":
-        return <p>Total CO2/kg: {subwayRes}</p>;
+        if (isNaN(subwayRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {subwayRes}</p>;
+        }
       case "7":
-        return <p>Total CO2/kg: {busRes}</p>;
+        if (isNaN(busRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {busRes}</p>;
+        }
       case "8":
-        return <p>Total CO2/kg: {ferryRes}</p>;
+        if (isNaN(ferryRes)) {
+          return <p>Total CO2/kg: 0</p>;
+        } else {
+          return <p>Total CO2/kg: {ferryRes}</p>;
+        }
 
       default:
         return <></>;

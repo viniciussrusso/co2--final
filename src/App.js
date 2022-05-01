@@ -1,5 +1,6 @@
 import Cards from "./components/Cards/Cards";
 import Header from "./components/Header/Header";
+import Donations from "./components/Donations/Donations";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -24,14 +25,14 @@ function App(props) {
         </Col>
         <Col>
           <Cards
-            cardTitle={"Petrol Car"}
+            cardTitle={"Car"}
             text={"Please enter your monthly KM"}
             cardId={"3"}
           />
         </Col>
         <Col>
           <Cards
-            cardTitle={"Petrol Motorcycle"}
+            cardTitle={"Motorcycle"}
             text={"Please enter your monthly KM"}
             cardId={"4"}
           />
@@ -68,6 +69,17 @@ function App(props) {
         </Col>
       </Row>
       <Cards cardTitle={"Results"} text={"All factors added: "} cardId={"9"} />
+      <Row>
+        <Col>
+          <h1 className="h1-mainpage">
+            We rely on donations to maintain our webpage. Donate today to help
+            us!
+          </h1>
+        </Col>
+        <Col md={4} style={{ padding: "5rem" }}>
+          <Donations />
+        </Col>
+      </Row>
     </Container>
   );
 }

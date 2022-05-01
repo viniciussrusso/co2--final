@@ -10,3 +10,9 @@ body {
 p1{
   color: black;
 }
+
+.h1-mainpage{
+  text-align: center;
+  padding: 15%;
+  font-size: 50px;
+}

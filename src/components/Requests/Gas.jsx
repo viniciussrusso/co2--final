@@ -33,11 +33,11 @@ export function Another(props) {
   }
   api2();
 
-  return (
-    <>
-      <button onClick={() => props.change(gas)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(gas);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default Another;

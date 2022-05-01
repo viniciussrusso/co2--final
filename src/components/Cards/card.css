@@ -1,8 +1,22 @@
 .card{
-    width: 20rem;
+    width: 100%;
     height: px;
     overflow: hidden;
-    padding: rem;
     margin-top: 1rem;
-    
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+    font-kerning: normal;
+    font-weight: normal;
+    color: #464646;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    margin-top: 10px;
+   
+        border-width: 2px;
+        border-color: rgb(33, 150, 243);
+        border-style: solid;
+        border-radius: 2px;
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }

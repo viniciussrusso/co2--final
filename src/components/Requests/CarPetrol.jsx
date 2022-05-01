@@ -34,11 +34,11 @@ export function CarPetrol(props) {
   }
   api();
 
-  return (
-    <>
-      <button onClick={() => props.change(car)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(car);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default CarPetrol;

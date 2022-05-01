@@ -34,11 +34,11 @@ export function Electricity(props) {
   }
   api();
 
-  return (
-    <>
-      <button onClick={() => props.change(eletricity)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(eletricity);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default Electricity;

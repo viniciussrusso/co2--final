@@ -1,0 +1,214 @@
+
+.fundraising-embeddable-widget {
+    max-width: 300px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+    font-kerning: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #464646;
+    line-height: 1.4;
+    padding: 25px;
+        border-width: 2px;
+        border-color: rgb(33, 150, 243);
+        border-style: solid;
+        border-radius: 2px;
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+
+.account-management-page-header .account-management-page-title i {
+    margin: 0px;
+}
+
+#widgetWizard .form-group .control-label {
+    margin-bottom: 15px;
+}
+
+#widgetWizard .form-inline .form-group .control-label {
+    margin-bottom: 5px;
+}
+
+#widgetWizard .form-group.col-sm-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+
+#widgetWizard input[type=text] {
+    margin-bottom: 50px;
+}
+
+#widgetWizard .widget-image {
+    margin-top: 15px;
+}
+
+#widgetWizard .fundraising-embeddable-widget-header {
+    font-size: 28px;
+    line-height: 1.214;
+    font-weight: 300;
+    text-align: left;
+    color: rgb(22, 33, 39);
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.input-field input {
+    text-align: center;
+}
+
+#widgetWizard .fundraising-embeddable-widget-header label {
+    font-size: 14px;
+}
+
+.card:first-of-type {
+    margin-right: 20px;
+}
+
+#widget-preview .card-content {
+    padding: 20px 0px;
+    margin: 10px;
+    text-align: center;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-body {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 10px;
+    max-height: 70px;
+    overflow-y: hidden;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+
+.fundraising-embeddable-widget-img-container {
+    margin-bottom: 15px;
+}
+
+.fundraising-embeddable-widget-img-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.fundraising-embeddable-widget-headline {
+    font-size: 22px;   
+    font-weight: bold;
+    line-height: 1.222;
+    text-align: center;
+    @extend .text-overflow-ellipsis;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.fundraising-embeddable-widget .fundraising-embeddable-widget-more-info {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.257;
+  
+
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-more-info a {
+    opacity: 0.9;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.257;
+    text-align: center;
+    color: #1976D2;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-more-info a:hover {
+    opacity: 1;
+    text-decoration:underline;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-progress-container {
+    margin: 20px 0;
+    padding: 20px;
+
+    text-align: center;
+
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-progress-container-title {
+    text-align: center;
+    font-weight: bold;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-progress-bar {
+    position: relative;
+
+    border-radius: 3px;
+    background-color: #dcdcdc;
+    height: 7px;
+    text-align: center;
+
+}
+
+.fundraising-embeddable-widget .fundraising-embeddable-widget-progress-bar .fundraising-embeddable-widget-bar-label {
+    position: absolute;
+    top: 2px;
+    font-weight: bold;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-progress-bar-bar {
+    height: 100%;
+    border-radius: 3px;
+    background-color: rgb(139, 195, 74);
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-raized {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+    line-height: 1.143;
+    text-align: center;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-contribute-button-container {
+    text-align: center;
+    margin: 15px 0px;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-contribute-button {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+
+    height: 50px;
+    width: 175px;
+    line-height: 50px;
+    border-radius: 2px;
+    background-color: rgb(139, 195, 74);
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-contribute-button:hover {
+    opacity: 0.9;
+}
+.fundraising-embeddable-widget .fundraising-embeddable-widget-contribute-button.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
+
+.input-group-addon {
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+     display: inline;
+}
+
+   .colorpicker-element {
+        text-align: center;
+        
+    }
+
+.form-inline .form-control {
+    width: 100%;
+}

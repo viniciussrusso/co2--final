@@ -33,11 +33,11 @@ export function Ferry(props) {
 
   api();
 
-  return (
-    <>
-      <button onClick={() => props.change(ferry)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(ferry);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default Ferry;

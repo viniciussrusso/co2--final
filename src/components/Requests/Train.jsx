@@ -34,11 +34,11 @@ export function Train(props) {
 
   api();
 
-  return (
-    <>
-      <button onClick={() => props.change(train)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(train);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default Train;

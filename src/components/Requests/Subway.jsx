@@ -33,11 +33,11 @@ export function Subway(props) {
 
   api();
 
-  return (
-    <>
-      <button onClick={() => props.change(subway)}>Send </button>
-    </>
-  );
+  function displayResult() {
+    props.change(subway);
+  }
+
+  return <>{displayResult()}</>;
 }
 
 export default Subway;
