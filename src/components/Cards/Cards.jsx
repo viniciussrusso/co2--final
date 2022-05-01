@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Card } from "react-bootstrap";
 import InputBar from "../Input/InputBar";
 
-const Cards = ({ cardTitle, text, cardId }) => {
+const Cards = ({ style, cardTitle, text, cardId }) => {
   const cardSelection = () => {
     switch (cardId) {
       case "1":
@@ -31,7 +31,7 @@ const Cards = ({ cardTitle, text, cardId }) => {
 
   return (
     <>
-      <Card className="card">
+      <Card className="card" style={style}>
         <Card.Body>
           <Card.Title>{cardTitle}</Card.Title>
           <Card.Text>{text}</Card.Text>

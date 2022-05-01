@@ -68,7 +68,12 @@ function App(props) {
           />
         </Col>
       </Row>
-      <Cards cardTitle={"Results"} text={"All factors added: "} cardId={"9"} />
+      <Cards
+        style={{ backgroundColor: "green", color: "black" }}
+        cardTitle={"Feedback"}
+        text={"All factors added: "}
+        cardId={"9"}
+      />
       <Row>
         <Col>
           <h1 className="h1-mainpage">
