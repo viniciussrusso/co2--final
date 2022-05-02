@@ -9,7 +9,7 @@ import Subway from "../Requests/Subway";
 import Ferry from "../Requests/Ferry";
 
 const InputBar = ({ inputId }) => {
-  const [userInput, setUserInput] = useState("");
+  const [userInput, setUserInput] = useState(0);
   const [eletricityRes, setElectricityRes] = useState();
   const [gasRes, setGasRes] = useState();
   const [carRes, setCardRes] = useState();
@@ -91,49 +91,49 @@ const InputBar = ({ inputId }) => {
     switch (inputId) {
       case "1":
         if (isNaN(eletricityRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {eletricityRes}</p>;
         }
       case "2":
         if (isNaN(gasRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {gasRes}</p>;
         }
       case "3":
         if (isNaN(carRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {carRes}</p>;
         }
       case "4":
         if (isNaN(motorcycleRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {motorcycleRes}</p>;
         }
       case "5":
         if (isNaN(trainRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {trainRes}</p>;
         }
       case "6":
         if (isNaN(subwayRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {subwayRes}</p>;
         }
       case "7":
         if (isNaN(busRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {busRes}</p>;
         }
       case "8":
         if (isNaN(ferryRes)) {
-          return <p>Total CO2/kg: 0</p>;
+          return <p>You must enter a number </p>;
         } else {
           return <p>Total CO2/kg: {ferryRes}</p>;
         }
@@ -143,7 +143,7 @@ const InputBar = ({ inputId }) => {
     }
   };
 
-  const a = () => {
+  const handleMultipleInputs = () => {
     if (
       inputId === "1" ||
       inputId === "2" ||
@@ -172,7 +172,7 @@ const InputBar = ({ inputId }) => {
 
   return (
     <>
-      {a()}
+      {handleMultipleInputs()}
       {selection()}
       {selectionTwo()}
     </>
