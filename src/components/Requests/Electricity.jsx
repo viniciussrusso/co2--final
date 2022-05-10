@@ -28,7 +28,6 @@ export function Electricity(props) {
     response = await response.json();
 
     const res = JSON.stringify(response.co2e);
-    console.log(res);
     const res2 = parseFloat(res);
     setEletricity(res2);
   }
